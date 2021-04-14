@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Short url:</strong>
+  <%= @url.short_url %>
+</p>
+
+<p>
+  <strong>Full url:</strong>
+  <%= @url.full_url %>
+</p>
+
+<p>
+  <strong>Open count:</strong>
+  <%= @url.open_count %>
+</p>
+
+<%= link_to 'Edit', edit_url_path(@url) %> |
+<%= link_to 'Back', urls_path %>
